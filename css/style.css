@@ -1,0 +1,136 @@
+a{
+    cursor: pointer;
+    color: #fff;
+}
+.ingrediant-info , .area,.cat{
+    cursor: pointer;
+}
+.card-info{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+aside{
+    white-space: nowrap !important;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover .card-info{
+    top: 0;
+}
+.category-info{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.6);
+    text-align: center;
+    font-weight: 700;
+    transition: .7s;
+}
+.card:hover .category-info{
+    top: 0;
+}
+/* ******************** */
+.parent{
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.toggled,aside .links{
+    display: none;
+}
+.menu{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu .links li{
+    display: flex;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.menu .links li:hover{
+    background-color: white;
+    color: black;
+}
+.menu .links li a{
+    padding-block: 25px ;
+}
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-footer .social{
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+.menu-footer .social  a{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-footer .social  a:hover{
+    border-color: #fff;
+    background-color: #fff;
+    color: #000;
+}
+/* ******************** */
+.close-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.close-icons img{
+    cursor: pointer;
+    width: 50px;
+}
+.share{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-block: 20px;
+}
+.share  a{
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share  a:hover{
+    border-color: #000;
+    background-color: #000;
+    color: #fff !important;
+}
